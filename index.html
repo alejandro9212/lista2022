@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel=StyleSheet type="text/css"></link>
+    <link href="style/" type="text/css" rel=StyleSheet />
     <title>Document</title>
 </head>
 <body>
-    <h1> hola lista</h1>
+    <!-- contenedor de ingrso de tareas -->
+    <div class="container bg-success ">
+      <div class="row">
+          <div class="col-12 col-lg-3 bg-danger"></div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <form action="#" id="dtform" >
+                  <input type="text" placeholder="Escribe tu tarea aqui..." autofocus>
+                  <input type="submit" value="+" id="addbtn">
+              </form>
+          </div>
+        <div class="col-12 col-lg-3 bg-danger"></div>
+      </div>
+      <!-- nudo de las tareas -->
+      <div class="row bg-info" id="1">
+        <div class="col-12 col-lg-3 bg-danger"></div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center">
+            <label for="">
+                <input type="checkbox">
+                    tarea1
+            </label>
+             <img src="img/iconos/delete.png" >
+        </div>
+        <div class="col-12 col-lg-3 bg-danger"></div>
+      </div>
+      <div class="row">
+          <div id="stars">
+              tareas pendientes : 5 completadas: 3
+          </div>
+      </div>
+
+    </div>
+    
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src=""></script>
+
 </body>
 </html>
