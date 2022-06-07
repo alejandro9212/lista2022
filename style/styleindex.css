@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-a: #D4AC0D;
+    --color-b: #eef773;
+    --color-c: #f8f52e;
+    --color-d: #f3e5abec;
+    --write:   #fff;
+    --gray:    #55557b;
+    --grayb:   #050c53;
+} 
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-a);
+} 
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 104px;
+}
+h1{
+    margin-top: 50px;
+    color: var(--write);
+    text-align: center;
+}
+form{
+    margin: 45px auto;
+    width: 400px;
+    text-align: center;
+    
+
+
+}
+form input[type="text"]{
+    background-color: var(--color-d);
+    color: var(--grayb);
+    border-style: none;
+    font-size: 1.5em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+form input[type="text"]::placeholder{
+    color: var(--color-a);
+}
+form input[type="text"]:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 45px;
+    height: 45px;
+    color: var(--color-a);
+    border-radius: 50px;
+    border-style: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+}
+form input[type="submit"]:hover{
+    background-color: var(--color-b);
+    color: var(--write);
+    cursor: pointer;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    box-shadow: inset 9px 5px 2px var(--color-a);
+}
+.list_container{
+    width: 400px;
+    margin: 0 auto;
+}
+.task_container{
+    background-color: var(--write);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--gray);
+}
+.closebtn{
+   width:25px;
+   height: 25px;
+   transition: all 0.1s ease;
+   -webkit-transition: all 0.1s ease;
+   -moz-transition: all 0.1s ease;
+   -ms-transition: all 0.1s ease;
+   -o-transition: all 0.1s ease;
+}
+.closebtn:hover{
+    cursor: pointer;
+    width:20px;
+    height: 20px;
+}
+#stars{
+    width: 400px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: var(--color-d);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+
+
+}
