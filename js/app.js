@@ -22,8 +22,14 @@ let addlisck=()=>{
  updatechek();
 }
 
+list.addEventListener('click',(event)=>{
+  if(event.srcElement.nodeName == "INPUT"){
+     
+  }; 
+})
 let updatechek=()=>{
-    let pend=list.querySelectorAll('input');
-    let comp=list.querySelectorAll('input[type="checkbox"]:checked');
-    stars.innerHTML+=`<p>tareas pendientes : ${pend.length} completadas: ${comp}</p>`
+  let pend=list.querySelectorAll('div');
+  let comp=list.querySelectorAll('input[type="checkbox"]:checked');
+  stars.innerHTML+=`<p>tareas pendientes : ${pend.length} completadas: ${comp.length}</p>`
 }
+
